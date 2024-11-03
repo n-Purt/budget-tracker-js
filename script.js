@@ -25,8 +25,6 @@ function updateStatistics() {
   expense.textContent = updatedExpense;
 }
 
-updateStatistics();
-
 function generateTemplate(id, source, time, amount) {
   return `<li data-id="${id}">
                   <p>
@@ -90,7 +88,6 @@ function getTransaction() {
     }
   });
 }
-getTransaction();
 
 function deleteTransaction(id) {
   transactions = transactions.filter((transaction) => {
